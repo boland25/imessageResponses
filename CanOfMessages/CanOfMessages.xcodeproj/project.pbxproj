@@ -1,0 +1,704 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A5EACE91E38543300DA40E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EACE81E38543300DA40E8 /* AppDelegate.swift */; };
+		3A5EACEB1E38543300DA40E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EACEA1E38543300DA40E8 /* ViewController.swift */; };
+		3A5EACEE1E38543300DA40E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5EACEC1E38543300DA40E8 /* Main.storyboard */; };
+		3A5EACF01E38543300DA40E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A5EACEF1E38543300DA40E8 /* Assets.xcassets */; };
+		3A5EACF31E38543300DA40E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5EACF11E38543300DA40E8 /* LaunchScreen.storyboard */; };
+		3A5EACFE1E38543300DA40E8 /* CanOfMessagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EACFD1E38543300DA40E8 /* CanOfMessagesTests.swift */; };
+		3A5EAD091E38543400DA40E8 /* CanOfMessagesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EAD081E38543400DA40E8 /* CanOfMessagesUITests.swift */; };
+		3A5EAD1D1E385FD700DA40E8 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A5EAD1C1E385FD700DA40E8 /* Messages.framework */; };
+		3A5EAD201E385FD700DA40E8 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EAD1F1E385FD700DA40E8 /* MessagesViewController.swift */; };
+		3A5EAD231E385FD700DA40E8 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5EAD211E385FD700DA40E8 /* MainInterface.storyboard */; };
+		3A5EAD251E385FD700DA40E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A5EAD241E385FD700DA40E8 /* Assets.xcassets */; };
+		3A5EAD291E385FD700DA40E8 /* CanOfMessages_Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3A5EAD1A1E385FD600DA40E8 /* CanOfMessages_Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3A5EAD301E38610F00DA40E8 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EAD2F1E38610F00DA40E8 /* Response.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A5EACFA1E38543300DA40E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A5EACDD1E38543300DA40E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A5EACE41E38543300DA40E8;
+			remoteInfo = CanOfMessages;
+		};
+		3A5EAD051E38543400DA40E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A5EACDD1E38543300DA40E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A5EACE41E38543300DA40E8;
+			remoteInfo = CanOfMessages;
+		};
+		3A5EAD271E385FD700DA40E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A5EACDD1E38543300DA40E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A5EAD191E385FD600DA40E8;
+			remoteInfo = CanOfMessages_Extension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3A5EAD2D1E385FD700DA40E8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3A5EAD291E385FD700DA40E8 /* CanOfMessages_Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3A5EACE51E38543300DA40E8 /* CanOfMessages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanOfMessages.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A5EACE81E38543300DA40E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3A5EACEA1E38543300DA40E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3A5EACED1E38543300DA40E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A5EACEF1E38543300DA40E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A5EACF21E38543300DA40E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A5EACF41E38543300DA40E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A5EACF91E38543300DA40E8 /* CanOfMessagesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanOfMessagesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A5EACFD1E38543300DA40E8 /* CanOfMessagesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanOfMessagesTests.swift; sourceTree = "<group>"; };
+		3A5EACFF1E38543300DA40E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A5EAD041E38543300DA40E8 /* CanOfMessagesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanOfMessagesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A5EAD081E38543400DA40E8 /* CanOfMessagesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanOfMessagesUITests.swift; sourceTree = "<group>"; };
+		3A5EAD0A1E38543400DA40E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A5EAD1A1E385FD600DA40E8 /* CanOfMessages_Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CanOfMessages_Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A5EAD1C1E385FD700DA40E8 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		3A5EAD1F1E385FD700DA40E8 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		3A5EAD221E385FD700DA40E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		3A5EAD241E385FD700DA40E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A5EAD261E385FD700DA40E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A5EAD2F1E38610F00DA40E8 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A5EACE21E38543300DA40E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A5EACF61E38543300DA40E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A5EAD011E38543300DA40E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A5EAD171E385FD600DA40E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A5EAD1D1E385FD700DA40E8 /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A5EACDC1E38543300DA40E8 = {
+			isa = PBXGroup;
+			children = (
+				3A5EACE71E38543300DA40E8 /* CanOfMessages */,
+				3A5EACFC1E38543300DA40E8 /* CanOfMessagesTests */,
+				3A5EAD071E38543400DA40E8 /* CanOfMessagesUITests */,
+				3A5EAD1E1E385FD700DA40E8 /* CanOfMessages_Extension */,
+				3A5EAD1B1E385FD700DA40E8 /* Frameworks */,
+				3A5EACE61E38543300DA40E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A5EACE61E38543300DA40E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A5EACE51E38543300DA40E8 /* CanOfMessages.app */,
+				3A5EACF91E38543300DA40E8 /* CanOfMessagesTests.xctest */,
+				3A5EAD041E38543300DA40E8 /* CanOfMessagesUITests.xctest */,
+				3A5EAD1A1E385FD600DA40E8 /* CanOfMessages_Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A5EACE71E38543300DA40E8 /* CanOfMessages */ = {
+			isa = PBXGroup;
+			children = (
+				3A5EAD2E1E3860CD00DA40E8 /* Models */,
+				3A5EACE81E38543300DA40E8 /* AppDelegate.swift */,
+				3A5EACEA1E38543300DA40E8 /* ViewController.swift */,
+				3A5EACEC1E38543300DA40E8 /* Main.storyboard */,
+				3A5EACEF1E38543300DA40E8 /* Assets.xcassets */,
+				3A5EACF11E38543300DA40E8 /* LaunchScreen.storyboard */,
+				3A5EACF41E38543300DA40E8 /* Info.plist */,
+			);
+			path = CanOfMessages;
+			sourceTree = "<group>";
+		};
+		3A5EACFC1E38543300DA40E8 /* CanOfMessagesTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A5EACFD1E38543300DA40E8 /* CanOfMessagesTests.swift */,
+				3A5EACFF1E38543300DA40E8 /* Info.plist */,
+			);
+			path = CanOfMessagesTests;
+			sourceTree = "<group>";
+		};
+		3A5EAD071E38543400DA40E8 /* CanOfMessagesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3A5EAD081E38543400DA40E8 /* CanOfMessagesUITests.swift */,
+				3A5EAD0A1E38543400DA40E8 /* Info.plist */,
+			);
+			path = CanOfMessagesUITests;
+			sourceTree = "<group>";
+		};
+		3A5EAD1B1E385FD700DA40E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A5EAD1C1E385FD700DA40E8 /* Messages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A5EAD1E1E385FD700DA40E8 /* CanOfMessages_Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3A5EAD1F1E385FD700DA40E8 /* MessagesViewController.swift */,
+				3A5EAD211E385FD700DA40E8 /* MainInterface.storyboard */,
+				3A5EAD241E385FD700DA40E8 /* Assets.xcassets */,
+				3A5EAD261E385FD700DA40E8 /* Info.plist */,
+			);
+			path = CanOfMessages_Extension;
+			sourceTree = "<group>";
+		};
+		3A5EAD2E1E3860CD00DA40E8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3A5EAD2F1E38610F00DA40E8 /* Response.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A5EACE41E38543300DA40E8 /* CanOfMessages */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A5EAD0D1E38543400DA40E8 /* Build configuration list for PBXNativeTarget "CanOfMessages" */;
+			buildPhases = (
+				3A5EACE11E38543300DA40E8 /* Sources */,
+				3A5EACE21E38543300DA40E8 /* Frameworks */,
+				3A5EACE31E38543300DA40E8 /* Resources */,
+				3A5EAD2D1E385FD700DA40E8 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A5EAD281E385FD700DA40E8 /* PBXTargetDependency */,
+			);
+			name = CanOfMessages;
+			productName = CanOfMessages;
+			productReference = 3A5EACE51E38543300DA40E8 /* CanOfMessages.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A5EACF81E38543300DA40E8 /* CanOfMessagesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A5EAD101E38543400DA40E8 /* Build configuration list for PBXNativeTarget "CanOfMessagesTests" */;
+			buildPhases = (
+				3A5EACF51E38543300DA40E8 /* Sources */,
+				3A5EACF61E38543300DA40E8 /* Frameworks */,
+				3A5EACF71E38543300DA40E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A5EACFB1E38543300DA40E8 /* PBXTargetDependency */,
+			);
+			name = CanOfMessagesTests;
+			productName = CanOfMessagesTests;
+			productReference = 3A5EACF91E38543300DA40E8 /* CanOfMessagesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3A5EAD031E38543300DA40E8 /* CanOfMessagesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A5EAD131E38543400DA40E8 /* Build configuration list for PBXNativeTarget "CanOfMessagesUITests" */;
+			buildPhases = (
+				3A5EAD001E38543300DA40E8 /* Sources */,
+				3A5EAD011E38543300DA40E8 /* Frameworks */,
+				3A5EAD021E38543300DA40E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A5EAD061E38543400DA40E8 /* PBXTargetDependency */,
+			);
+			name = CanOfMessagesUITests;
+			productName = CanOfMessagesUITests;
+			productReference = 3A5EAD041E38543300DA40E8 /* CanOfMessagesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		3A5EAD191E385FD600DA40E8 /* CanOfMessages_Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A5EAD2A1E385FD700DA40E8 /* Build configuration list for PBXNativeTarget "CanOfMessages_Extension" */;
+			buildPhases = (
+				3A5EAD161E385FD600DA40E8 /* Sources */,
+				3A5EAD171E385FD600DA40E8 /* Frameworks */,
+				3A5EAD181E385FD600DA40E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CanOfMessages_Extension;
+			productName = CanOfMessages_Extension;
+			productReference = 3A5EAD1A1E385FD600DA40E8 /* CanOfMessages_Extension.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A5EACDD1E38543300DA40E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = mallocmedia;
+				TargetAttributes = {
+					3A5EACE41E38543300DA40E8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3E6BQ2LVL2;
+						ProvisioningStyle = Automatic;
+					};
+					3A5EACF81E38543300DA40E8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3E6BQ2LVL2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3A5EACE41E38543300DA40E8;
+					};
+					3A5EAD031E38543300DA40E8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3E6BQ2LVL2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3A5EACE41E38543300DA40E8;
+					};
+					3A5EAD191E385FD600DA40E8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3E6BQ2LVL2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3A5EACE01E38543300DA40E8 /* Build configuration list for PBXProject "CanOfMessages" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A5EACDC1E38543300DA40E8;
+			productRefGroup = 3A5EACE61E38543300DA40E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A5EACE41E38543300DA40E8 /* CanOfMessages */,
+				3A5EACF81E38543300DA40E8 /* CanOfMessagesTests */,
+				3A5EAD031E38543300DA40E8 /* CanOfMessagesUITests */,
+				3A5EAD191E385FD600DA40E8 /* CanOfMessages_Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A5EACE31E38543300DA40E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A5EACF31E38543300DA40E8 /* LaunchScreen.storyboard in Resources */,
+				3A5EACF01E38543300DA40E8 /* Assets.xcassets in Resources */,
+				3A5EACEE1E38543300DA40E8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A5EACF71E38543300DA40E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A5EAD021E38543300DA40E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A5EAD181E385FD600DA40E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A5EAD251E385FD700DA40E8 /* Assets.xcassets in Resources */,
+				3A5EAD231E385FD700DA40E8 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A5EACE11E38543300DA40E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A5EACEB1E38543300DA40E8 /* ViewController.swift in Sources */,
+				3A5EAD301E38610F00DA40E8 /* Response.swift in Sources */,
+				3A5EACE91E38543300DA40E8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A5EACF51E38543300DA40E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A5EACFE1E38543300DA40E8 /* CanOfMessagesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A5EAD001E38543300DA40E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A5EAD091E38543400DA40E8 /* CanOfMessagesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A5EAD161E385FD600DA40E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A5EAD201E385FD700DA40E8 /* MessagesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A5EACFB1E38543300DA40E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A5EACE41E38543300DA40E8 /* CanOfMessages */;
+			targetProxy = 3A5EACFA1E38543300DA40E8 /* PBXContainerItemProxy */;
+		};
+		3A5EAD061E38543400DA40E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A5EACE41E38543300DA40E8 /* CanOfMessages */;
+			targetProxy = 3A5EAD051E38543400DA40E8 /* PBXContainerItemProxy */;
+		};
+		3A5EAD281E385FD700DA40E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A5EAD191E385FD600DA40E8 /* CanOfMessages_Extension */;
+			targetProxy = 3A5EAD271E385FD700DA40E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3A5EACEC1E38543300DA40E8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A5EACED1E38543300DA40E8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A5EACF11E38543300DA40E8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A5EACF21E38543300DA40E8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3A5EAD211E385FD700DA40E8 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A5EAD221E385FD700DA40E8 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A5EAD0B1E38543400DA40E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A5EAD0C1E38543400DA40E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A5EAD0E1E38543400DA40E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3E6BQ2LVL2;
+				INFOPLIST_FILE = CanOfMessages/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mallocmedia.CanOfMessages;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3A5EAD0F1E38543400DA40E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3E6BQ2LVL2;
+				INFOPLIST_FILE = CanOfMessages/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mallocmedia.CanOfMessages;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3A5EAD111E38543400DA40E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3E6BQ2LVL2;
+				INFOPLIST_FILE = CanOfMessagesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mallocmedia.CanOfMessagesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CanOfMessages.app/CanOfMessages";
+			};
+			name = Debug;
+		};
+		3A5EAD121E38543400DA40E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3E6BQ2LVL2;
+				INFOPLIST_FILE = CanOfMessagesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mallocmedia.CanOfMessagesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CanOfMessages.app/CanOfMessages";
+			};
+			name = Release;
+		};
+		3A5EAD141E38543400DA40E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3E6BQ2LVL2;
+				INFOPLIST_FILE = CanOfMessagesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mallocmedia.CanOfMessagesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CanOfMessages;
+			};
+			name = Debug;
+		};
+		3A5EAD151E38543400DA40E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3E6BQ2LVL2;
+				INFOPLIST_FILE = CanOfMessagesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mallocmedia.CanOfMessagesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CanOfMessages;
+			};
+			name = Release;
+		};
+		3A5EAD2B1E385FD700DA40E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				DEVELOPMENT_TEAM = 3E6BQ2LVL2;
+				INFOPLIST_FILE = CanOfMessages_Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mallocmedia.CanOfMessages.CanOfMessages-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3A5EAD2C1E385FD700DA40E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				DEVELOPMENT_TEAM = 3E6BQ2LVL2;
+				INFOPLIST_FILE = CanOfMessages_Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mallocmedia.CanOfMessages.CanOfMessages-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A5EACE01E38543300DA40E8 /* Build configuration list for PBXProject "CanOfMessages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A5EAD0B1E38543400DA40E8 /* Debug */,
+				3A5EAD0C1E38543400DA40E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A5EAD0D1E38543400DA40E8 /* Build configuration list for PBXNativeTarget "CanOfMessages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A5EAD0E1E38543400DA40E8 /* Debug */,
+				3A5EAD0F1E38543400DA40E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3A5EAD101E38543400DA40E8 /* Build configuration list for PBXNativeTarget "CanOfMessagesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A5EAD111E38543400DA40E8 /* Debug */,
+				3A5EAD121E38543400DA40E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3A5EAD131E38543400DA40E8 /* Build configuration list for PBXNativeTarget "CanOfMessagesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A5EAD141E38543400DA40E8 /* Debug */,
+				3A5EAD151E38543400DA40E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3A5EAD2A1E385FD700DA40E8 /* Build configuration list for PBXNativeTarget "CanOfMessages_Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A5EAD2B1E385FD700DA40E8 /* Debug */,
+				3A5EAD2C1E385FD700DA40E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A5EACDD1E38543300DA40E8 /* Project object */;
+}
