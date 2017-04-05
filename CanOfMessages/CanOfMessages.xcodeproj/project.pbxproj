@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A55033B1E932F1000C13277 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EAD2F1E38610F00DA40E8 /* Response.swift */; };
+		3A55033D1E932F2E00C13277 /* CompactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A55033C1E932F2E00C13277 /* CompactViewController.swift */; };
+		3A55033F1E932F4300C13277 /* ExpandedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A55033E1E932F4300C13277 /* ExpandedViewController.swift */; };
 		3A5EACE91E38543300DA40E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EACE81E38543300DA40E8 /* AppDelegate.swift */; };
 		3A5EACEB1E38543300DA40E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EACEA1E38543300DA40E8 /* ViewController.swift */; };
 		3A5EACEE1E38543300DA40E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5EACEC1E38543300DA40E8 /* Main.storyboard */; };
@@ -61,6 +64,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3A55033C1E932F2E00C13277 /* CompactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompactViewController.swift; sourceTree = "<group>"; };
+		3A55033E1E932F4300C13277 /* ExpandedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandedViewController.swift; sourceTree = "<group>"; };
 		3A5EACE51E38543300DA40E8 /* CanOfMessages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanOfMessages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A5EACE81E38543300DA40E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A5EACEA1E38543300DA40E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -186,6 +191,8 @@
 				3A5EAD211E385FD700DA40E8 /* MainInterface.storyboard */,
 				3A5EAD241E385FD700DA40E8 /* Assets.xcassets */,
 				3A5EAD261E385FD700DA40E8 /* Info.plist */,
+				3A55033C1E932F2E00C13277 /* CompactViewController.swift */,
+				3A55033E1E932F4300C13277 /* ExpandedViewController.swift */,
 			);
 			path = CanOfMessages_Extension;
 			sourceTree = "<group>";
@@ -395,7 +402,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A55033D1E932F2E00C13277 /* CompactViewController.swift in Sources */,
+				3A55033B1E932F1000C13277 /* Response.swift in Sources */,
 				3A5EAD201E385FD700DA40E8 /* MessagesViewController.swift in Sources */,
+				3A55033F1E932F4300C13277 /* ExpandedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -673,6 +683,7 @@
 				3A5EAD0F1E38543400DA40E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A5EAD101E38543400DA40E8 /* Build configuration list for PBXNativeTarget "CanOfMessagesTests" */ = {
 			isa = XCConfigurationList;
@@ -681,6 +692,7 @@
 				3A5EAD121E38543400DA40E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A5EAD131E38543400DA40E8 /* Build configuration list for PBXNativeTarget "CanOfMessagesUITests" */ = {
 			isa = XCConfigurationList;
@@ -689,6 +701,7 @@
 				3A5EAD151E38543400DA40E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A5EAD2A1E385FD700DA40E8 /* Build configuration list for PBXNativeTarget "CanOfMessages_Extension" */ = {
 			isa = XCConfigurationList;
@@ -697,6 +710,7 @@
 				3A5EAD2C1E385FD700DA40E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -11,6 +11,10 @@ import Messages
 
 class MessagesViewController: MSMessagesAppViewController {
     
+    @IBOutlet weak var tableView: UITableView?
+    var cans = ["Yo Daddy-0", "Bigups!", "Sup Dawg"]
+    var savedConversation: MSConversation?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -24,10 +28,11 @@ class MessagesViewController: MSMessagesAppViewController {
     // MARK: - Conversation Handling
     
     override func willBecomeActive(with conversation: MSConversation) {
-        // Called when the extension is about to move from the inactive to active state.
-        // This will happen when the extension is about to present UI.
-        
-        // Use this method to configure the extension and restore previously stored state.
+        super.willBecomeActive(with: conversation)
+        if let convo = activeConversation {
+            savedConversation = convo
+        }
+    
     }
     
     override func didResignActive(with conversation: MSConversation) {
@@ -67,6 +72,74 @@ class MessagesViewController: MSMessagesAppViewController {
         // Called after the extension transitions to a new presentation style.
     
         // Use this method to finalize any behaviors associated with the change in presentation style.
+    }
+
+    //NOTE: Don't think I need this stuff right now
+//    func presentVC(for conversation: MSConversation, with presentationStyle: MSMessagesAppPresentationStyle) {
+//        let controller: UIViewController
+//        
+//        if presentationStyle == .compact {
+//            controller = compactVC
+//        } else {
+//            controller = expandedVC
+//        }
+//        addChildViewController(controller)
+//    }
+    
+//    var compactVC : UIViewController {
+//        guard let compactVC = storyboard?.instantiateViewController(withIdentifier: "CompactVC") as? CompactViewController else {
+//            fatalError("Could not make Comact VC")
+//        }
+//        return compactVC
+//    }
+//    
+//    var expandedVC: UIViewController {
+//        guard let expandedVC = storyboard?.instantiateViewController(withIdentifier: "ExpandedVC") as? ExpandedViewController else {
+//            fatalError("Coulf not make Expanded VC")
+//        }
+//        return expandedVC
+//    }
+
+}
+
+extension MessagesViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //TEMP for now just create a few, but will need to pull these from somewhere
+        return cans.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let tvc = tableView.dequeueReusableCell(withIdentifier: "CannedMessageTableViewCell")
+        let cannedResponse = cans[indexPath.row]
+        tvc?.textLabel?.text = cannedResponse
+        return tvc!
+    }
+    
+ //   func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+//        let cannedResponse = cans[indexPath.row]
+//        let message = MSMessage()
+//        let layout = MSMessageTemplateLayout()
+//        layout.caption = cannedResponse
+//        message.layout = layout
+//        guard let convo = activeConversation else { return nil }
+//        convo.insert(message) { (error) in
+//            print("this was added")
+//        }
+//        return indexPath
+
+ //   }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cannedResponse = cans[indexPath.row]
+        let message = MSMessage()
+        let layout = MSMessageTemplateLayout()
+        layout.caption = cannedResponse
+        message.layout = layout
+        guard let convo = activeConversation else { return }
+        convo.insert(message) { (error) in
+            print("this was added")
+        }
     }
 
 }
