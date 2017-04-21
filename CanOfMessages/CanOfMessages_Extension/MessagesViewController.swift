@@ -13,6 +13,7 @@ class MessagesViewController: MSMessagesAppViewController {
     
     @IBOutlet weak var tableView: UITableView?
     var cans = ["Yo Daddy-0", "Bigups!", "Sup Dawg"]
+    var fiftysCans = ["A Gas", "Hey Big Daddy", "Are you copping a bit", "square", "cube", "cats", "Yo Daddy-o", "dig it man, that's crazy!", "Out to get your kicks?"]
     var savedConversation: MSConversation?
     
     override func viewDidLoad() {
@@ -106,12 +107,12 @@ extension MessagesViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //TEMP for now just create a few, but will need to pull these from somewhere
-        return cans.count
+        return fiftysCans.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let tvc = tableView.dequeueReusableCell(withIdentifier: "CannedMessageTableViewCell")
-        let cannedResponse = cans[indexPath.row]
+        let cannedResponse = fiftysCans[indexPath.row]
         tvc?.textLabel?.text = cannedResponse
         return tvc!
     }
@@ -131,7 +132,7 @@ extension MessagesViewController: UITableViewDelegate, UITableViewDataSource {
  //   }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cannedResponse = cans[indexPath.row]
+        let cannedResponse = fiftysCans[indexPath.row]
         let message = MSMessage()
         let layout = MSMessageTemplateLayout()
         layout.caption = cannedResponse
