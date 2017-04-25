@@ -12,7 +12,7 @@ import Messages
 class MessagesViewController: MSMessagesAppViewController {
     
     @IBOutlet weak var tableView: UITableView?
-    var cans = ["Yo Daddy-0", "Bigups!", "Sup Dawg"]
+    var cans = Cans()
     var fiftysCans = ["A Gas", "Hey Big Daddy", "Are you copping a bit", "square", "cube", "cats", "Yo Daddy-o", "dig it man, that's crazy!", "Out to get your kicks?"]
     var savedConversation: MSConversation?
     
@@ -80,13 +80,25 @@ class MessagesViewController: MSMessagesAppViewController {
 extension MessagesViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //TEMP for now just create a few, but will need to pull these from somewhere
-        return fiftysCans.count
+        guard let can = Can(rawValue: section) else { return 1 }
+        switch can {
+        case .fiftys:
+            return cans.fiftysCans.count
+        case .sixtys:
+            return cans.sixtysCans.count
+        case .milenials:
+            return cans.milenialCans.count
+        }
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return cans.total
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let tvc = tableView.dequeueReusableCell(withIdentifier: "CannedMessageTableViewCell")
-        let cannedResponse = fiftysCans[indexPath.row]
+        guard let canArray = cans.current(index: indexPath.section) else { return UITableViewCell() }
+        let cannedResponse = canArray[indexPath.row]
         tvc?.textLabel?.text = cannedResponse
         return tvc!
     }
@@ -106,15 +118,22 @@ extension MessagesViewController: UITableViewDelegate, UITableViewDataSource {
  //   }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cannedResponse = fiftysCans[indexPath.row]
+        guard let canArray = cans.current(index: indexPath.section) else { return }
+        let cannedResponse = canArray[indexPath.row]
         let message = MSMessage()
-        let layout = MSMessageTemplateLayout()
-        layout.caption = cannedResponse
-        message.layout = layout
+        message.layout = createMessageLayout(caption: cannedResponse)
         guard let convo = activeConversation else { return }
         convo.insert(message) { (error) in
             print("this was added")
         }
+    }
+    
+    func createMessageLayout(caption: String) -> MSMessageTemplateLayout {
+        let layout = MSMessageTemplateLayout()
+        layout.caption = caption
+        layout.image = nil
+        layout.subcaption = nil
+        return layout
     }
 
 }

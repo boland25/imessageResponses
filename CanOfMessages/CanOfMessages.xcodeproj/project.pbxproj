@@ -23,6 +23,7 @@
 		3A5EAD251E385FD700DA40E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A5EAD241E385FD700DA40E8 /* Assets.xcassets */; };
 		3A5EAD291E385FD700DA40E8 /* CanOfMessages_Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3A5EAD1A1E385FD600DA40E8 /* CanOfMessages_Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3A5EAD301E38610F00DA40E8 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EAD2F1E38610F00DA40E8 /* Response.swift */; };
+		3A8E94631EAED7B1000F6848 /* Cans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8E94621EAED7B1000F6848 /* Cans.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		3A5EAD241E385FD700DA40E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A5EAD261E385FD700DA40E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A5EAD2F1E38610F00DA40E8 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		3A8E94621EAED7B1000F6848 /* Cans.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cans.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 				3A5EAD261E385FD700DA40E8 /* Info.plist */,
 				3A55033C1E932F2E00C13277 /* CompactViewController.swift */,
 				3A55033E1E932F4300C13277 /* ExpandedViewController.swift */,
+				3A8E94621EAED7B1000F6848 /* Cans.swift */,
 			);
 			path = CanOfMessages_Extension;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 			files = (
 				3A55033D1E932F2E00C13277 /* CompactViewController.swift in Sources */,
 				3A55033B1E932F1000C13277 /* Response.swift in Sources */,
+				3A8E94631EAED7B1000F6848 /* Cans.swift in Sources */,
 				3A5EAD201E385FD700DA40E8 /* MessagesViewController.swift in Sources */,
 				3A55033F1E932F4300C13277 /* ExpandedViewController.swift in Sources */,
 			);
