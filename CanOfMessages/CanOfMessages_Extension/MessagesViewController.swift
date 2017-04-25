@@ -75,32 +75,6 @@ class MessagesViewController: MSMessagesAppViewController {
         // Use this method to finalize any behaviors associated with the change in presentation style.
     }
 
-    //NOTE: Don't think I need this stuff right now
-//    func presentVC(for conversation: MSConversation, with presentationStyle: MSMessagesAppPresentationStyle) {
-//        let controller: UIViewController
-//        
-//        if presentationStyle == .compact {
-//            controller = compactVC
-//        } else {
-//            controller = expandedVC
-//        }
-//        addChildViewController(controller)
-//    }
-    
-//    var compactVC : UIViewController {
-//        guard let compactVC = storyboard?.instantiateViewController(withIdentifier: "CompactVC") as? CompactViewController else {
-//            fatalError("Could not make Comact VC")
-//        }
-//        return compactVC
-//    }
-//    
-//    var expandedVC: UIViewController {
-//        guard let expandedVC = storyboard?.instantiateViewController(withIdentifier: "ExpandedVC") as? ExpandedViewController else {
-//            fatalError("Coulf not make Expanded VC")
-//        }
-//        return expandedVC
-//    }
-
 }
 
 extension MessagesViewController: UITableViewDelegate, UITableViewDataSource {
